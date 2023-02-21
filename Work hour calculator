@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int n,i ;
+  float average,array[30],total=0;
+  cout<<"The program calculates the total amount of"<<"\n"<<"work hours during a given time frame and the average work day length."<<"\n";
+  cout<<"How many days:"<<"\n";
+  cin>>n;
+  for(i=0; i<n ;i++)
+ { cout<<"Input hours of workday "<<i+1<<": ";
+  cin>>array[i];
+ 
+  total+=array[i];}
+  cout<<"Total work hours: "<<total<<"\n";
+  average=total/n;
+cout<<"Average work day length: "<<average<<"\n";
+cout<<"Inputted hours: ";
+for(i=0; i<n ;i++)
+{cout<<array[i]<<" ";}
+cout<<endl;
+	
+}
